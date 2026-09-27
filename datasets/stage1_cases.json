@@ -1,0 +1,67 @@
+[
+  {
+    "case_id": "PERS-001",
+    "user_context": [
+      {"id": "C1", "source": "conversation_2", "fact": "User uses Python and FastAPI."},
+      {"id": "C2", "source": "conversation_4", "fact": "User uses PostgreSQL."},
+      {"id": "C3", "source": "conversation_5", "fact": "User is learning AI/ML by building small applications."}
+    ],
+    "conversation": [
+      {"turn": 1, "role": "user", "content": "I am starting another backend project. What architecture should I consider?"}
+    ],
+    "response_a": "A modular monolith is a reasonable starting point. It keeps deployment simple while allowing you to separate domains into modules and split services later if needed.",
+    "response_b": "Given your existing FastAPI and PostgreSQL experience, I would start with a modular monolith. You can keep the deployment simple while organizing the code into clear modules, then split a module into a service later if the project actually needs it.",
+    "gold_notes": "B has relevant, grounded personalization. A is useful but misses available context. Neither should claim preferences that are not present."
+  },
+  {
+    "case_id": "PERS-002",
+    "user_context": [
+      {"id": "C1", "source": "conversation_1", "fact": "User uses Python."},
+      {"id": "C2", "source": "conversation_3", "fact": "User has never stated a preference for concise answers."}
+    ],
+    "conversation": [
+      {"turn": 1, "role": "user", "content": "Explain database indexes."}
+    ],
+    "response_a": "Since you use Python, think of a database index like a dictionary lookup: it helps the database find a row without scanning everything.",
+    "response_b": "Since you prefer concise technical explanations, here is the short version: an index is an additional data structure that helps the database locate rows efficiently.",
+    "gold_notes": "A uses a relevant technical analogy tied to known context. B invents a preference. The invented preference is an unsupported inference."
+  },
+  {
+    "case_id": "PERS-003",
+    "user_context": [
+      {"id": "C1", "source": "youtube", "fact": "User watches football videos."},
+      {"id": "C2", "source": "conversation_2", "fact": "User is asking for a Python unit-testing example."}
+    ],
+    "conversation": [
+      {"turn": 1, "role": "user", "content": "Show me a simple pytest example."}
+    ],
+    "response_a": "Here is a simple pytest example with a small function and two assertions.",
+    "response_b": "Since you watch football, imagine pytest as a referee checking whether your function follows the rules. Here is the example.",
+    "gold_notes": "A avoids irrelevant personalization. B forces unrelated personal context into a technical answer."
+  },
+  {
+    "case_id": "PERS-004",
+    "user_context": [
+      {"id": "C1", "source": "conversation_7", "fact": "User uses Celery and Redis for background jobs."}
+    ],
+    "conversation": [
+      {"turn": 1, "role": "user", "content": "How should I handle a long-running background task in my application?"}
+    ],
+    "response_a": "You can use a background job queue. Since you already use Celery with Redis, keeping that existing pattern may reduce unnecessary infrastructure changes.",
+    "response_b": "You should use Celery because you always prefer familiar tools and dislike learning new systems.",
+    "gold_notes": "A makes a bounded recommendation grounded in the known stack. B adds unsupported claims about the user's preferences."
+  },
+  {
+    "case_id": "PERS-005",
+    "user_context": [
+      {"id": "C1", "source": "conversation_1", "fact": "User uses Python."},
+      {"id": "C2", "source": "conversation_2", "fact": "User uses Django."}
+    ],
+    "conversation": [
+      {"turn": 1, "role": "user", "content": "What should I use for a frontend for a new web application?"}
+    ],
+    "response_a": "Because you use Django, React is the right frontend for you.",
+    "response_b": "Your Django experience is relevant if you want server-rendered templates, but if you specifically want a separate frontend, options include React, Vue, and Svelte. The choice depends on your UI complexity and team constraints.",
+    "gold_notes": "B uses the personal context carefully without pretending it determines the frontend choice. A overclaims that Django implies React."
+  }
+]
