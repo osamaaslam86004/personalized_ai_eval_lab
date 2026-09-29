@@ -4,21 +4,21 @@ Complete independently before consulting any gold notes.
 
 | Case | A G | A I | A H | A R | B G | B I | B H | B R | Forced | Unsupported | Winner |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---|---|---|
-| PERS-006 | 5 | 5 | 5 | 5 | 2 | 2 | 2 | 3 | true | true | A |
-| PERS-007 | 5 | 5 | 5 | 5 | 2 | 2 | 3 | 4 | false | true | A |
-| PERS-008 | 5 | 5 | 4 | 4 | 2 | 1 | 2 | 2 | true | true | A |
-| PERS-009 | 5 | 5 | 5 | 5 | 2 | 2 | 2 | 4 | true | true | A |
-| PERS-010 | 5 | 5 | 5 | 5 | 2 | 1 | 2 | 2 | false | true | A |
-| PERS-011 | 5 | 5 | 5 | 5 | 2 | 2 | 2 | 3 | true | true | A |
-| PERS-012 | 5 | 5 | 5 | 5 | 1 | 2 | 1 | 4 | false | false | A |
-| PERS-013 | 5 | 5 | 5 | 5 | 2 | 1 | 2 | 1 | true | true | A |
-| PERS-014 | 5 | 5 | 5 | 5 | 3 | 2 | 2 | 3 | true | false | A |
-| PERS-015 | 5 | 5 | 5 | 5 | 2 | 2 | 2 | 2 | false | true | A |
-| PERS-016 | 5 | 5 | 5 | 5 | 3 | 3 | 2 | 3 | false | true | A |
-| PERS-017 | 5 | 5 | 5 | 5 | 2 | 1 | 2 | 2 | true | false | A |
-| PERS-018 | 5 | 5 | 5 | 5 | 2 | 2 | 3 | 2 | true | false | A |
-| PERS-019 | 5 | 5 | 5 | 5 | 2 | 2 | 2 | 3 | false | true | A |
-| PERS-020 | 5 | 5 | 5 | 5 | 4 | 4 | 4 | 4 | false | false | Tie |
+| PERS-006 | 5 | 5 | 5 | 5 | 2 | 2 | 2 | 3 | true | false | A |
+| PERS-007 | 5 | 4 | 4 | 4 | 2 | 2 | 3 | 4 | false | true | A |
+| PERS-008 | 5 | 4 | 4 | 4 | 2 | 1 | 2 | 2 | true | false | A |
+| PERS-009 | 5 | 5 | 5 | 5 | 2 | 2 | 2 | 4 | true | false | A |
+| PERS-010 | 5 | 3 | 3 | 3 | 2 | 1 | 2 | 2 | false | false | A |
+| PERS-011 | 5 | 4 | 4 | 4 | 2 | 2 | 2 | 3 | true | true | A |
+| PERS-012 | 5 | 4 | 5 | 5 | 1 | 2 | 1 | 4 | false | false | A |
+| PERS-013 | 5 | 3 | 4 | 3 | 2 | 1 | 2 | 1 | true | false | A |
+| PERS-014 | 5 | 4 | 4 | 4 | 3 | 2 | 2 | 3 | true | false | A |
+| PERS-015 | 5 | 4 | 4 | 4 | 2 | 2 | 2 | 2 | false | true | A |
+| PERS-016 | 5 | 4 | 4 | 4 | 3 | 3 | 2 | 3 | false | false | A |
+| PERS-017 | 5 | 4 | 4 | 4 | 2 | 1 | 2 | 2 | true | false | A |
+| PERS-018 | 5 | 3 | 4 | 3 | 2 | 2 | 3 | 2 | true | false | A |
+| PERS-019 | 5 | 4 | 4 | 4 | 2 | 2 | 2 | 3 | false | true | A |
+| PERS-020 | 5 | 4 | 4 | 4 | 5 | 4 | 4 | 4 | false | false | Tie |
 
 ## Rationales
 
