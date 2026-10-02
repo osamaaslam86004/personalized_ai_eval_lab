@@ -1,0 +1,165 @@
+{
+  "dataset_id": "stage4_pipeline_baseline",
+  "dataset_version": "1.0.0",
+  "cases": [
+    {
+      "case_id": "PIPE-001",
+      "context": {
+        "C1": "User uses Python and FastAPI.",
+        "C2": "User uses PostgreSQL.",
+        "C3": "User is learning Docker."
+      },
+      "request": "How should I package my small FastAPI API for deployment?",
+      "candidate_response": "Since you use FastAPI and are learning Docker, containerizing the API with Docker is a natural fit.",
+      "expected": {
+        "personalized_claims": [
+          {
+            "claim_id": "C1",
+            "claim": "You use FastAPI",
+            "evidence_ids": [
+              "C1"
+            ],
+            "label": "EXPLICIT",
+            "score": 5
+          },
+          {
+            "claim_id": "C2",
+            "claim": "You are learning Docker",
+            "evidence_ids": [
+              "C3"
+            ],
+            "label": "EXPLICIT",
+            "score": 5
+          }
+        ],
+        "coverage": "Complete"
+      }
+    },
+    {
+      "case_id": "PIPE-002",
+      "context": {
+        "C1": "User uses Python.",
+        "C2": "User has asked for concise explanations.",
+        "C3": "User has never stated a preference for pytest."
+      },
+      "request": "Show me a simple way to test a Python function.",
+      "candidate_response": "Because you prefer pytest, I'll keep this concise and use pytest.",
+      "expected": {
+        "personalized_claims": [
+          {
+            "claim_id": "C1",
+            "claim": "You prefer pytest",
+            "evidence_ids": [],
+            "label": "UNSUPPORTED",
+            "score": 1
+          },
+          {
+            "claim_id": "C2",
+            "claim": "You prefer concise explanations",
+            "evidence_ids": [
+              "C2"
+            ],
+            "label": "EXPLICIT",
+            "score": 5
+          }
+        ],
+        "coverage": "Failed"
+      }
+    },
+    {
+      "case_id": "PIPE-003",
+      "context": {
+        "C1": "User uses Django.",
+        "C2": "User uses FastAPI.",
+        "C3": "User uses PostgreSQL."
+      },
+      "request": "Explain database indexes.",
+      "candidate_response": "Since you use PostgreSQL, an index can help PostgreSQL find rows without scanning the entire table.",
+      "expected": {
+        "personalized_claims": [
+          {
+            "claim_id": "C1",
+            "claim": "You use PostgreSQL",
+            "evidence_ids": [
+              "C3"
+            ],
+            "label": "EXPLICIT",
+            "score": 5
+          }
+        ],
+        "coverage": "Complete"
+      }
+    },
+    {
+      "case_id": "PIPE-004",
+      "context": {
+        "C1": "User watches football videos.",
+        "C2": "User is learning AI evaluation.",
+        "C3": "User uses Python."
+      },
+      "request": "What is precision versus recall?",
+      "candidate_response": "Since you enjoy football videos, I'll use a football referee analogy.",
+      "expected": {
+        "personalized_claims": [
+          {
+            "claim_id": "C1",
+            "claim": "You enjoy football videos",
+            "evidence_ids": [
+              "C1"
+            ],
+            "label": "INFERRED",
+            "score": 2
+          }
+        ],
+        "coverage": "Incomplete"
+      }
+    },
+    {
+      "case_id": "PIPE-005",
+      "context": {
+        "C1": "User uses Django.",
+        "C2": "User has never used React.",
+        "C3": "User is learning JavaScript."
+      },
+      "request": "What is React?",
+      "candidate_response": "Since you already use React with Django, React components should be familiar to you.",
+      "expected": {
+        "personalized_claims": [
+          {
+            "claim_id": "C1",
+            "claim": "You already use React with Django",
+            "evidence_ids": [
+              "C2"
+            ],
+            "label": "CONTRADICTED",
+            "score": 1
+          }
+        ],
+        "coverage": "Failed"
+      }
+    },
+    {
+      "case_id": "PIPE-006",
+      "context": {
+        "C1": "User explicitly prefers PostgreSQL for relational projects.",
+        "C2": "User has used MongoDB."
+      },
+      "request": "Should I use PostgreSQL or MongoDB for a relational application?",
+      "candidate_response": "You have explicitly said you prefer PostgreSQL for relational projects.",
+      "expected": {
+        "personalized_claims": [
+          {
+            "claim_id": "C1",
+            "claim": "You explicitly prefer PostgreSQL for relational projects",
+            "evidence_ids": [
+              "C1"
+            ],
+            "label": "EXPLICIT",
+            "score": 5
+          }
+        ],
+        "coverage": "Complete"
+      }
+    }
+  ]
+}
