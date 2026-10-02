@@ -24,7 +24,7 @@ Complete independently before consulting any gold notes.
 
 ### "case_id": "PERS-006"
 **Winner:** A  
-**Rationale:** Response A is preferable because it naturally integrates C1, C2, and C3 to suggest Docker while steering clear of unnecessary complex setups like Kubernetes (C4). Response B invents an unsupported inference that Kubernetes is a "natural next step" for learning Docker (C3, C4). This forced personalization pushes an over-engineered solution for a small personal project, degrading its grounding and helpfulness.
+**Rationale:** Response A is preferable because it naturally integrates C1, C2, and C3 to suggest Docker while steering clear of unnecessary complex setups like Kubernetes (C4). Response B invents an unjustified personalization/recommendation that Kubernetes is a "natural next step" for learning Docker (C3, C4). This forced personalization pushes an over-engineered solution for a small personal project, degrading its grounding and helpfulness.
 
 ### "case_id": "PERS-007"
 **Winner:** A  
