@@ -18,7 +18,7 @@ Every personalized claim made by the assistant directly mirrors explicit facts p
 
 | Claim ID | Personalized claim | Evidence ID(s) | Label | Score |
 |---|---|---|---|---|
-| C1 | You prefer pytest | None (Contradicts C3) | Contradicted| 1 |
+| C1 | You prefer pytest | None (Contradicts C3) | UNSUPPORTED | 1 |
 | C2 | You prefer concise explanations / keep it concise | C2 | Explicit | 5 |
 | C3 | | | | |
 
@@ -47,7 +47,7 @@ The response accurately references the user's database usage (C3) and synthesize
 
 | Claim ID | Personalized claim | Evidence ID(s) | Label | Score |
 |---|---|---|---|---|
-| C1 | You prefer Redis | None (Contradicts C2) | CONTRADICTED| 1 |
+| C1 | You prefer Redis | None | UNSUPPORTED | 1 |
 | C2 | You can use Redis and Celery | C1 | Explicit | 5 |
 | C3 | | | | |
 
@@ -104,7 +104,7 @@ Context C1 states that the user watches football videos, but the AI claims the u
 
 | Claim ID | Personalized claim | Evidence ID(s) | Label | Score |
 |---|---|---|---|---|
-| C1 | You use FastAPI | C2 | Explicit | 5 |
+| C1 | You use FastAPI | C1 | Explicit | 5 |
 | C2 | You use pytest | C2 | Explicit | 5 |
 | C3 | You want CI / want to add CI | C3 | Explicit | 5 |
 
@@ -160,7 +160,7 @@ Both personalized statements trace directly to explicit facts in the user contex
 
 | Claim ID | Personalized claim | Evidence ID(s) | Label | Score |
 |---|---|---|---|---|
-| C1 | You prefer managing infrastructure yourself | None (CONTRADICT C4) | UNSUPPORTED | 1 |
+| C1 | You prefer managing infrastructure yourself | None | UNSUPPORTED | 1 |
 | C2 | | | | |
 | C3 | | | | |
 
@@ -188,7 +188,7 @@ Both claims in the response map directly to explicit context items C1 and C2. Th
 
 | Claim ID | Personalized claim | Evidence ID(s) | Label | Score |
 |---|---|---|---|---|
-| C1 | You already use React with Django | None (Contradicts C2) | CONTRADICTED | 1|
+| C1 | You already use React with Django | None | UNSUPPORTED | 1|
 | C2 | | | | |
 | C3 | | | | |
 
