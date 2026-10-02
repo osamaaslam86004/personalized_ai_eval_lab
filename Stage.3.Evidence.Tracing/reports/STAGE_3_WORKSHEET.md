@@ -18,7 +18,7 @@ Every personalized claim made by the assistant directly mirrors explicit facts p
 
 | Claim ID | Personalized claim | Evidence ID(s) | Label | Score |
 |---|---|---|---|---|
-| C1 | You prefer pytest | None (Contradicts C3) | UNSUPPORTED | 1 |
+| C1 | You prefer pytest | None | UNSUPPORTED | 1 |
 | C2 | You prefer concise explanations / keep it concise | C2 | Explicit | 5 |
 | C3 | | | | |
 
