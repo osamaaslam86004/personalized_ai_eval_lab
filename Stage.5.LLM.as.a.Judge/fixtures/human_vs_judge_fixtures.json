@@ -1,0 +1,103 @@
+{
+  "metadata": {
+    "purpose": "Small deterministic fixtures for comparing validated judge output with human reference labels.",
+    "note": "Illustrative fixture outputs, not model-generated truth."
+  },
+  "comparisons": [
+    {
+      "case_id": "JUDGE-001",
+      "human": {
+        "grounding": 5,
+        "integration": 5,
+        "helpfulness": 5,
+        "personalization_relevance": 5,
+        "forced_personalization": false,
+        "unsupported_inference": false
+      },
+      "judge": {
+        "grounding": 5,
+        "integration": 5,
+        "helpfulness": 5,
+        "personalization_relevance": 5,
+        "forced_personalization": false,
+        "unsupported_inference": false
+      }
+    },
+    {
+      "case_id": "JUDGE-002",
+      "human": {
+        "grounding": 2,
+        "integration": 3,
+        "helpfulness": 4,
+        "personalization_relevance": 1,
+        "forced_personalization": true,
+        "unsupported_inference": true
+      },
+      "judge": {
+        "grounding": 2,
+        "integration": 2,
+        "helpfulness": 3,
+        "personalization_relevance": 1,
+        "forced_personalization": true,
+        "unsupported_inference": true
+      }
+    },
+    {
+      "case_id": "JUDGE-003",
+      "human": {
+        "grounding": 5,
+        "integration": 5,
+        "helpfulness": 5,
+        "personalization_relevance": 5,
+        "forced_personalization": false,
+        "unsupported_inference": false
+      },
+      "judge": {
+        "grounding": 5,
+        "integration": 5,
+        "helpfulness": 5,
+        "personalization_relevance": 5,
+        "forced_personalization": false,
+        "unsupported_inference": false
+      }
+    },
+    {
+      "case_id": "JUDGE-004",
+      "human": {
+        "grounding": 1,
+        "integration": 1,
+        "helpfulness": 1,
+        "personalization_relevance": 1,
+        "forced_personalization": false,
+        "unsupported_inference": true
+      },
+      "judge": {
+        "grounding": 1,
+        "integration": 1,
+        "helpfulness": 1,
+        "personalization_relevance": 1,
+        "forced_personalization": false,
+        "unsupported_inference": true
+      }
+    },
+    {
+      "case_id": "JUDGE-005",
+      "human": {
+        "grounding": 5,
+        "integration": 5,
+        "helpfulness": 5,
+        "personalization_relevance": 5,
+        "forced_personalization": false,
+        "unsupported_inference": false
+      },
+      "judge": {
+        "grounding": 4,
+        "integration": 5,
+        "helpfulness": 5,
+        "personalization_relevance": 5,
+        "forced_personalization": false,
+        "unsupported_inference": false
+      }
+    }
+  ]
+}

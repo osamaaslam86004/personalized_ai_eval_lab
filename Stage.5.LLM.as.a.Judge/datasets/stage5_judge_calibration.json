@@ -1,0 +1,157 @@
+{
+  "metadata": {
+    "name": "Stage 5 LLM Judge Calibration Set",
+    "version": "1.0",
+    "purpose": "Calibrate structured LLM-as-a-Judge outputs against human reference labels."
+  },
+  "cases": [
+    {
+      "case_id": "JUDGE-001",
+      "context": [
+        {
+          "id": "C1",
+          "text": "User uses Python and FastAPI for backend services."
+        },
+        {
+          "id": "C2",
+          "text": "User uses PostgreSQL."
+        }
+      ],
+      "request": "Suggest a starting architecture for a small backend service.",
+      "candidate_response": "Given your FastAPI and PostgreSQL experience, a modular monolith is a sensible starting point. Keep the API, domain logic, and persistence layers separate without introducing microservices yet.",
+      "human_reference": {
+        "grounding": 5,
+        "integration": 5,
+        "helpfulness": 5,
+        "personalization_relevance": 5,
+        "forced_personalization": false,
+        "unsupported_inference": false,
+        "winner": "A"
+      }
+    },
+    {
+      "case_id": "JUDGE-002",
+      "context": [
+        {
+          "id": "C1",
+          "text": "User uses Python."
+        },
+        {
+          "id": "C2",
+          "text": "User has never stated a preference for concise answers."
+        }
+      ],
+      "request": "Explain database indexes.",
+      "candidate_response": "Since you prefer concise technical explanations, I'll keep this short: an index is like a Python dictionary lookup that helps find data without scanning every row.",
+      "human_reference": {
+        "grounding": 2,
+        "integration": 3,
+        "helpfulness": 4,
+        "personalization_relevance": 1,
+        "forced_personalization": true,
+        "unsupported_inference": true,
+        "winner": "B"
+      }
+    },
+    {
+      "case_id": "JUDGE-003",
+      "context": [
+        {
+          "id": "C1",
+          "text": "User watches football videos."
+        },
+        {
+          "id": "C2",
+          "text": "User asks Python programming questions."
+        }
+      ],
+      "request": "Show a simple pytest unit-test example.",
+      "candidate_response": "Here is a small pytest example. A test function calls the code under test and uses an assertion to verify the expected result.",
+      "human_reference": {
+        "grounding": 5,
+        "integration": 5,
+        "helpfulness": 5,
+        "personalization_relevance": 5,
+        "forced_personalization": false,
+        "unsupported_inference": false,
+        "winner": "A"
+      }
+    },
+    {
+      "case_id": "JUDGE-004",
+      "context": [
+        {
+          "id": "C1",
+          "text": "User uses Celery and Redis for background jobs."
+        },
+        {
+          "id": "C2",
+          "text": "User has never stated a preference for managing infrastructure themselves."
+        }
+      ],
+      "request": "What should I consider when choosing a managed Redis service?",
+      "candidate_response": "You prefer managing infrastructure yourself, so self-hosting Redis is probably the better fit.",
+      "human_reference": {
+        "grounding": 1,
+        "integration": 1,
+        "helpfulness": 1,
+        "personalization_relevance": 1,
+        "forced_personalization": false,
+        "unsupported_inference": true,
+        "winner": "A"
+      }
+    },
+    {
+      "case_id": "JUDGE-005",
+      "context": [
+        {
+          "id": "C1",
+          "text": "User explicitly prefers PostgreSQL for relational projects."
+        },
+        {
+          "id": "C2",
+          "text": "User has used MongoDB."
+        }
+      ],
+      "request": "Compare PostgreSQL and MongoDB for a relational application.",
+      "candidate_response": "You have explicitly preferred PostgreSQL for relational projects, so PostgreSQL is the stronger default here. MongoDB can still make sense when a document model is a better fit.",
+      "human_reference": {
+        "grounding": 5,
+        "integration": 5,
+        "helpfulness": 5,
+        "personalization_relevance": 5,
+        "forced_personalization": false,
+        "unsupported_inference": false,
+        "winner": "A"
+      }
+    },
+    {
+      "case_id": "JUDGE-006",
+      "context": [
+        {
+          "id": "C1",
+          "text": "User has FastAPI and Python experience."
+        },
+        {
+          "id": "C2",
+          "text": "User is learning Docker."
+        },
+        {
+          "id": "C3",
+          "text": "User has never mentioned Kubernetes."
+        }
+      ],
+      "request": "How should I deploy a small FastAPI API?",
+      "candidate_response": "Since you are learning Docker, Kubernetes is the natural next step. Start with Kubernetes manifests and a cluster rather than a simple container deployment.",
+      "human_reference": {
+        "grounding": 2,
+        "integration": 2,
+        "helpfulness": 2,
+        "personalization_relevance": 3,
+        "forced_personalization": true,
+        "unsupported_inference": false,
+        "winner": "A"
+      }
+    }
+  ]
+}
